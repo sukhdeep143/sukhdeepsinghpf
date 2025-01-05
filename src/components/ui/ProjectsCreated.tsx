@@ -1,0 +1,44 @@
+import React from "react";
+import Image from "next/image";
+
+const MyProjects = () => {
+  return (
+    <section className="bg-black text-white sm:min-h-screen px-6 py-12">
+      <div className="max-w-7xl mx-auto">
+        {/* Title Section */}
+        <div className="text-5xl font-bold mb-12 relative">
+          <h1>My projects</h1>
+          <span className="absolute right-0 top-0 text-7xl font-bold text-white">
+            ×
+          </span>
+        </div>
+
+        {/* Project Card */}
+        <div className="relative flex items-center">
+          {/* Project Image */}
+          <div className="rounded-lg overflow-hidden">
+           
+            <Image
+              src="/projectsImage.png"
+              width={900}
+              height={900}
+              alt="Project"
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Project Details */}
+          <div className="absolute bottom-4 left-4 bg-gradient-to-t from-black via-black/50 to-transparent p-4 rounded-lg cursor-pointer">
+            <h2 className="text-3xl font-bold">Astrology</h2>
+            <p className="text-lg text-gray-300">2025</p>
+            <h1>click Me To visit my website</h1>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default MyProjects;

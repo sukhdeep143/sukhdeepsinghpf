@@ -1,6 +1,7 @@
 "use client";
+
 import React, { useState } from "react";
-import Image from "next/image";
+
 
 function Header() {
   const [isClick, setisClick] = useState(false);
@@ -9,23 +10,19 @@ function Header() {
     setisClick(!isClick);
   };
   return (
-    <main className="bg-transparent sm:pl-5 sm:rounded-full sm:border border-purple-600 ">
+    <main className={`bg-transparent sm:pl-5 sm:rounded-full sm:border border-purple-600 `} >
       <div className=" max-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center   h-16">
           <div className="flex items-center    min-w-full  justify-between  ">
             <div className="flex-shrink-0  text-white flex-col-reverse transform transition-transform duration-300 ease-in-out  hover:scale-125 ">
-                <Image
-                    className="rounded-full"
-                     src="/outline.png"
-                     width={30}
-                     height={30}
-                     alt="Picture of the author" />
+              
+                <div className={`text-white hover:bg-pink-700 hover:text-white rounded-full transform transition-transform duration-300 ease-in-out  hover:scale-90 p-2 BokorFont sm:text-4xl text-xl `} >Sukhdeep Singh</div>
             </div>
-            <div className="hidden sm:block ">
+            <div className="hidden sm:block  sm:text-3xl ">
               <div className="ml-4 flex items-center  space-x-4 ">
                 <a
                   href=""
-                  className="text-white hover:bg-pink-600 hover:text-white rounded-lg transform transition-transform duration-300 ease-in-out  hover:scale-90 p-2"
+                  className="text-white hover:bg-pink-600 hover:text-white rounded-lg transform transition-transform duration-300 ease-in-out  hover:scale-90 p-2 Bokor"
                 >
                   Home
                 </a>
@@ -49,7 +46,7 @@ function Header() {
                 </a>
               </div>
             </div>
-            <button  className="bg-white p-2 rounded m-4 sm:hidden transform transition-transform duration-300 ease-in-out  hover:scale-90  "
+            <button  className="bg-transparent p-2 rounded-sm  m-4 sm:hidden transform transition-transform duration-300 ease-in-out   hover:scale-90  "
              onClick={ToggleNav}
              >
               {isClick ? (
@@ -60,6 +57,7 @@ function Header() {
                   width="24"
                   height="24"
                   fill="none"
+                  
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -89,7 +87,7 @@ function Header() {
         </div>
       </div>
       {isClick && (
-        <div className="sm:hidden   ">
+        <div className="sm:hidden  text-xl ">
           <div className="px-2 pt-2 pb-3  space-y-1 sm:px-3 grid grid-row-4 ">
             <a
               href=""
