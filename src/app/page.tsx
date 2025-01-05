@@ -1,6 +1,5 @@
 import Aboutimage from "@/components/ui/Aboutimage";
 import AboutMe from "@/components/ui/AboutMe";
-import ContactMe from "@/components/ui/ContactMe";
 import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
 import MyImage from "@/components/ui/MyImage";
