@@ -36,7 +36,7 @@ export default function Home() {
           <div className="min-h-[100px] rounded-xl">
               <Aboutimage />
           </div>
-          <div className="min-h-[100px] sm:pt-36 rounded-xl" >
+          <div className="min-h-[100px] sm:pt-14 rounded-xl" >
             <AboutMe />
           </div>
        </div>

@@ -21,9 +21,9 @@ function AboutMe() {
           is marked by continuous growth, and I am committed to excelling
           further in the field.
         </p>
-        <button className="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white font-semibold rounded-lg shadow-md">
+        {/* <button className="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white font-semibold rounded-lg shadow-md">
           Contact Me
-        </button>
+        </button> */}
       </div>
     </div>
   );
