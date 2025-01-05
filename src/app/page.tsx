@@ -31,6 +31,14 @@ export default function Home() {
           <MyImage />
         </div>
      </div>
+
+ 
+       <div className="flex sm:text-8xl text-3xl sm:pt-16 pt-6 justify-center">
+        <h1 className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent animate-gradient"> Let`s Dive Into My World</h1>
+       </div>
+
+
+
      <div className="min-h-screen ">
        <div className="grid sm:grid-cols-2 m-4 gap-4 ">
           <div className="min-h-[100px] rounded-xl">
@@ -41,7 +49,7 @@ export default function Home() {
           </div>
        </div>
        <div className="flex sm:text-8xl text-5xl  justify-center">
-        <h1>My Skills</h1>
+        <h1 className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent animate-gradient">My Skills</h1>
        </div>
        <div className="grid sm:grid-cols-2 m-4 gap-4">
           <div className="min-h-[100px] rounded-xl">

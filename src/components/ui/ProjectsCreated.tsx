@@ -7,8 +7,8 @@ const MyProjects = () => {
       <div className="max-w-7xl mx-auto">
         {/* Title Section */}
         <div className="text-5xl font-bold mb-12 relative">
-          <h1>My projects</h1>
-          <span className="absolute right-0 top-0 text-7xl font-bold text-white">
+          <h1 className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent animate-gradient">My projects</h1>
+          <span className="absolute bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent animate-gradient right-0 top-0 text-7xl font-bold text-white">
             ×
           </span>
         </div>
@@ -28,9 +28,10 @@ const MyProjects = () => {
           </div>
 
           {/* Project Details */}
-          <div className="absolute bottom-4 left-4 bg-gradient-to-t from-black via-black/50 to-transparent p-4 rounded-lg cursor-pointer">
+
+          <div  className="absolute bottom-4 left-4 text-gray-100 bg-gradient-to-t from-black via-black/50 to-transparent p-4 rounded-lg cursor-pointer">
             <h2 className="text-3xl font-bold">Astrology</h2>
-            <p className="text-lg text-gray-300">2025</p>
+            <p className="text-lg text-gray-100">2025</p>
             <h1>click Me To visit my website</h1>
             
           </div>
