@@ -11,7 +11,7 @@ const SkillsTwo = () => {
         {skills.map((skill, index) => (
           <div key={index} className="flex pl-7 pr-7  items-center justify-between">
             {/* Skill Name */}
-            <p className="text-lg">{skill.name}</p>
+            <p className=" bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent animate-gradient sm:text-4xl text-xl">{skill.name}</p>
   
             {/* Skill Dots */}
             <div className="flex gap-1">

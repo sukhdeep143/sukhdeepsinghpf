@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 
@@ -20,33 +21,35 @@ function Header() {
             </div>
             <div className="hidden sm:block  sm:text-3xl ">
               <div className="ml-4 flex items-center  space-x-4 ">
-                <a
-                  href=""
+                <Link
+                
+                  href="/"
                   className="text-white hover:bg-pink-600 hover:text-white rounded-lg transform transition-transform duration-300 ease-in-out  hover:scale-90 p-2 Bokor"
-                >
+                  >
                   Home
-                </a>
+                  </Link>
+                
                 <a
                   href=""
                   className="text-white hover:bg-pink-600 hover:text-white rounded-lg transform transition-transform duration-300 ease-in-out  hover:scale-90 p-2"
                 >
                   About Me
                 </a>
-                <a
-                  href=""
+                <Link
+                  href="/contact"
                   className="text-white hover:bg-pink-600 hover:text-white transform transition-transform duration-300 ease-in-out  hover:scale-90 rounded-lg p-2"
                 >
                   Contact Us
-                </a>
-                <a
-                  href=""
+                </Link>
+                <Link
+                  href="/Our_services"
                   className="text-white hover:bg-pink-600 hover:text-white transform transition-transform duration-300 ease-in-out  hover:scale-90 rounded-lg p-2"
                 >
                   Our Services
-                </a>
+                </Link>
               </div>
             </div>
-            <button  className="bg-transparent p-2 rounded-sm  m-4 sm:hidden transform transition-transform duration-300 ease-in-out   hover:scale-90  "
+            <button  className="bg-white p-2 rounded-sm  m-4 sm:hidden transform transition-transform duration-300 ease-in-out   hover:scale-90  "
              onClick={ToggleNav}
              >
               {isClick ? (
@@ -76,6 +79,7 @@ function Header() {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth="2"
+                  
                   >
                   <line x1="4" y1="6" x2="20" y2="6" />
                   <line x1="4" y1="12" x2="20" y2="12" />
@@ -87,32 +91,32 @@ function Header() {
         </div>
       </div>
       {isClick && (
-        <div className="sm:hidden  text-xl ">
+        <div className="sm:hidden shadow-2xl border rounded-xl text-xl ">
           <div className="px-2 pt-2 pb-3  space-y-1 sm:px-3 grid grid-row-4 ">
-            <a
-              href=""
+            <Link
+              href="/"
               className="text-white hover:bg-pink-600  hover:text-white rounded-lg p-2 transform transition-transform duration-300 ease-in-out  hover:scale-90"
             >
               Home
-            </a>
+            </Link>
             <a
               href=""
               className="text-white hover:bg-pink-600 hover:text-white rounded-lg p-2  transform transition-transform duration-300 ease-in-out  hover:scale-90"
             >
               About Me
             </a>
-            <a
-              href=""
+            <Link
+              href="/contact"
               className="text-white hover:bg-pink-600 hover:text-white rounded-lg p-2  transform transition-transform duration-300 ease-in-out  hover:scale-90"
             >
               Contact Us
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              href="/Our_services"
               className="text-white hover:bg-pink-600 hover:text-white rounded-lg p-2  transform transition-transform duration-300 ease-in-out  hover:scale-90"
             >
               Our Services
-            </a>
+            </Link>
           </div>
         </div>
       )}
