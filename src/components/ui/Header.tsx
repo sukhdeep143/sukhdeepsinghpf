@@ -49,7 +49,7 @@ function Header() {
                 </Link>
               </div>
             </div>
-            <button  className="bg-white p-2 rounded-sm  m-4 sm:hidden transform transition-transform duration-300 ease-in-out   hover:scale-90  "
+            <button  className="bg-black p-2 rounded-sm  m-4 sm:hidden transform transition-transform duration-300 ease-in-out   hover:scale-90  "
              onClick={ToggleNav}
              >
               {isClick ? (
@@ -99,12 +99,12 @@ function Header() {
             >
               Home
             </Link>
-            <a
-              href=""
+            <Link
+              href="/"
               className="text-white hover:bg-pink-600 hover:text-white rounded-lg p-2  transform transition-transform duration-300 ease-in-out  hover:scale-90"
             >
               About Me
-            </a>
+            </Link>
             <Link
               href="/contact"
               className="text-white hover:bg-pink-600 hover:text-white rounded-lg p-2  transform transition-transform duration-300 ease-in-out  hover:scale-90"

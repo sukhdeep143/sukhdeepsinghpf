@@ -1,9 +1,9 @@
 const SkillsTwo = () => {
     const skills = [
-      { name: "ReactJs", level: 8 },
-      { name: "NextJs", level: 7 },
+      { name: "ReactJs", level: 6 },
+      { name: "NextJs", level: 5 },
       { name: "NodeJs", level: 6 },
-      { name: "mongodb", level: 7 },
+      { name: "MongoDB", level: 7 },
     ];
   
     return (
