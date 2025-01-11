@@ -8,6 +8,7 @@ const Skills = () => {
   
     return (
       <div className="flex flex-col gap-6 sm:p-8   text-white">
+        
         {skills.map((skill, index) => (
           <div key={index} className="pl-7 pr-7 flex items-center justify-between">
             {/* Skill Name */}

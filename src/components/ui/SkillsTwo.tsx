@@ -1,3 +1,4 @@
+
 const SkillsTwo = () => {
     const skills = [
       { name: "ReactJs", level: 6 },
@@ -8,6 +9,7 @@ const SkillsTwo = () => {
   
     return (
       <div className="flex flex-col gap-6 sm:p-8  text-white">
+        
         {skills.map((skill, index) => (
           <div key={index} className="flex pl-7 pr-7  items-center justify-between">
             {/* Skill Name */}

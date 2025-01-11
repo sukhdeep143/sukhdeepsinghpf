@@ -16,8 +16,11 @@ function Header() {
         <div className="flex items-center   h-16">
           <div className="flex items-center    min-w-full  justify-between  ">
             <div className="flex-shrink-0  text-white flex-col-reverse transform transition-transform duration-300 ease-in-out  hover:scale-125 ">
-              
+              <Link 
+              href="/"
+              >
                 <div className={`text-white hover:bg-pink-700 hover:text-white rounded-full transform transition-transform duration-300 ease-in-out  hover:scale-90 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent animate-gradient p-2 BokorFont sm:text-4xl text-xl `} >Sukhdeep Singh</div>
+                </Link>
             </div>
             <div className="hidden sm:block  sm:text-3xl ">
               <div className="ml-4 flex items-center  space-x-4 ">
@@ -30,7 +33,7 @@ function Header() {
                   </Link>
                 
                 <a
-                  href=""
+                  href="/about_me"
                   className="text-white hover:bg-pink-600 hover:text-white rounded-lg transform transition-transform duration-300 ease-in-out  hover:scale-90 p-2"
                 >
                   About Me
