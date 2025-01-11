@@ -23,6 +23,8 @@ export default function Home() {
     <main className={`${NewFontType.className} min-h-screen  sm:pt-5 bg-gradient-to-r  via-purple-900 from-violet-800 to-black`}>
      <Header />
 
+     
+
      <div className="grid m-4 gap-4 sm:grid-cols-2 ">
         <div className="min-h-[100px] hover:sm:border border-purple-600 shadow  rounded-lg flex justify-center items-center flex-col text-white pb-2"> 
           <TextFront />
